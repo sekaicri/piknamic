@@ -19,7 +19,7 @@ class UserRequest extends FormRequest
         return [
             'name'=>'required|string',
             'email'=>'required|string|unique:users|email',
-            'password'=>'required|string',
+            'password'=>'required|string|confirmed',
         ];
     }
     public function failedValidation(Validator $validator)
@@ -28,14 +28,14 @@ class UserRequest extends FormRequest
             'success'   => false,
             'message'   => 'Validación de errores',
             'data'      => $validator->errors()
-        ]));
+        ], 400, [], JSON_PRETTY_PRINT));
     }
     public function messages()
     {
         return [
             'required' => 'Todos los campos son requeridos',
             'unique' => 'El campo :attribute ya está registrado.',
-            'email' => 'El campo :attribute tiene que ser un correo valido.'
+            'email' => 'El campo :attribute tiene que ser un correo valido.',
         ];
     }
 }
