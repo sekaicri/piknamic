@@ -1,7 +1,7 @@
 ManifestFileVersion: 0
-CRC: 2457166008
+CRC: 3343908750
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: prefab/oneprefab
+      Name: prefab/caja1
       Dependencies: {}

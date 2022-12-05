@@ -1,21 +1,27 @@
 ManifestFileVersion: 0
-CRC: 3657840172
+CRC: 2863889278
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 0a01e114a78a8a23fba97f46bfdede8f
+    Hash: d6efefe5e57147c0bf2cecc1f539d1bd
   TypeTreeHash:
     serializedVersion: 2
-    Hash: e8851bd141a1581249a81e55a31e2746
+    Hash: 61596e85c4826ae183d031a67382c577
 HashAppended: 0
 ClassTypes:
 - Class: 1
+  Script: {instanceID: 0}
+- Class: 4
   Script: {instanceID: 0}
 - Class: 21
   Script: {instanceID: 0}
 - Class: 28
   Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
 - Class: 48
+  Script: {instanceID: 0}
+- Class: 65
   Script: {instanceID: 0}
 - Class: 114
   Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
@@ -31,9 +37,15 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 78310ba9072e2134a8c9a0ce7fe9199e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2214e894396087a48b0d56799330019f, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 128
+  Script: {instanceID: 0}
+- Class: 137
   Script: {instanceID: 0}
 - Class: 213
   Script: {instanceID: 0}
@@ -93,5 +105,5 @@ SerializeReferenceClassIdentifiers:
 - AssemblyName: UnityEngine.UI
   ClassName: UnityEngine.UI.Toggle/ToggleEvent
 Assets:
-- Assets/Prefab/selectableButton.prefab
+- Assets/Prefab/Caja_1.prefab
 Dependencies: []
