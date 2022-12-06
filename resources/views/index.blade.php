@@ -50,11 +50,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Piknamic.loader.js";
+      var loaderUrl = buildUrl + "/Nueva carpeta.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Piknamic.data",
-        frameworkUrl: buildUrl + "/Piknamic.framework.js",
-        codeUrl: buildUrl + "/Piknamic.wasm",
+        dataUrl: buildUrl + "/Nueva carpeta.data",
+        frameworkUrl: buildUrl + "/Nueva carpeta.framework.js",
+        codeUrl: buildUrl + "/Nueva carpeta.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Picnamick",
