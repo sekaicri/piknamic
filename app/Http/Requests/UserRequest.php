@@ -19,7 +19,7 @@ class UserRequest extends FormRequest
         return [
             'name'=>'required|string',
             'email'=>'required|string|unique:users|email',
-            'password'=>'required|string|confirmed',
+            'password'=>'required|string',
         ];
     }
     public function failedValidation(Validator $validator)
