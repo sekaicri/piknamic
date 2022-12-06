@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 3302350739
+CRC: 563217524
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: ea0f9949470478e873ff85a6b693ed90
+    Hash: 2bca6b462ccc21021ead2e8f841bbb79
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 489ca56f27eb4000716d289bed84e118
+    Hash: f6ff7340c57e3947bfff0f7704b524cf
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -39,6 +39,8 @@ ClassTypes:
   Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 78310ba9072e2134a8c9a0ce7fe9199e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 09f615a60b45f134cb8dda734cbf7fea, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 128
@@ -54,6 +56,8 @@ ClassTypes:
 SerializeReferenceClassIdentifiers:
 - AssemblyName: Assembly-CSharp
   ClassName: ButtonStyle/Style
+- AssemblyName: Assembly-CSharp
+  ClassName: InformationSetupElement
 - AssemblyName: Unity.TextMeshPro
   ClassName: TMPro.FaceInfo_Legacy
 - AssemblyName: Unity.TextMeshPro
