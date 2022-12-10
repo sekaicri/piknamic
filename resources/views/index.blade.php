@@ -8,21 +8,15 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+    <div id="unity-container" style="width: 100%; height: 100%">
+      <canvas id="unity-canvas" width=auto height=auto></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
           <div id="unity-progress-bar-full"></div>
         </div>
       </div>
-      <div id="unity-warning"> </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Picnamick</div>
-      </div>
-    </div>
+    
     <script>
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
@@ -58,9 +52,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/Piknamic.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Piknamic.data.unityweb",
-        frameworkUrl: buildUrl + "/Piknamic.framework.js.unityweb",
-        codeUrl: buildUrl + "/Piknamic.wasm.unityweb",
+        dataUrl: buildUrl + "/Piknamic.data",
+        frameworkUrl: buildUrl + "/Piknamic.framework.js",
+        codeUrl: buildUrl + "/Piknamic.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Picnamick",
@@ -93,8 +87,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "100%";
+        canvas.style.height = "100%";
       }
 
       loadingBar.style.display = "block";
@@ -106,9 +100,6 @@
           progressBarFull.style.width = 100 * progress + "%";
         }).then((unityInstance) => {
           loadingBar.style.display = "none";
-          fullscreenButton.onclick = () => {
-            unityInstance.SetFullscreen(1);
-          };
         }).catch((message) => {
           alert(message);
         });
