@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1514420341
+CRC: 3071216798
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 14329f24dfb4eefdceba431ca8108cf8
+    Hash: d455eaee7669668305a26a2239c32df5
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 4c403cdb2db697e3a3b00be922ae71da
+    Hash: 489ca56f27eb4000716d289bed84e118
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -21,8 +21,6 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 48
   Script: {instanceID: 0}
-- Class: 54
-  Script: {instanceID: 0}
 - Class: 65
   Script: {instanceID: 0}
 - Class: 114
@@ -35,8 +33,6 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: e8c87e195c96c924b9a13550467b207e, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 09f615a60b45f134cb8dda734cbf7fea, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
 - Class: 114
@@ -58,8 +54,6 @@ ClassTypes:
 SerializeReferenceClassIdentifiers:
 - AssemblyName: Assembly-CSharp
   ClassName: ButtonStyle/Style
-- AssemblyName: Assembly-CSharp
-  ClassName: InformationSetupElement
 - AssemblyName: Unity.TextMeshPro
   ClassName: TMPro.FaceInfo_Legacy
 - AssemblyName: Unity.TextMeshPro
@@ -109,5 +103,5 @@ SerializeReferenceClassIdentifiers:
 - AssemblyName: UnityEngine.UI
   ClassName: UnityEngine.UI.Toggle/ToggleEvent
 Assets:
-- Assets/PrefabElements/lata_1 Variant.prefab
+- Assets/PrefabElements/Caja_1.prefab
 Dependencies: []
