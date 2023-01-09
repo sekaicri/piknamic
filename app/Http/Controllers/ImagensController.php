@@ -21,9 +21,10 @@ class ImagensController extends Controller
             if ($request->hasFile('imagen')) {
                 $uniqid = uniqid();
                 $file = $request->file('imagen');
-                $filename = $uniqid . '.' . $file->getClientOriginalExtension();
-                $file->storeAs('posts', $filename, 'public');
-                // $filename = $request->file('imagen')->store('posts','public');
+                //$filename = $uniqid . '.' . $file->getClientOriginalExtension();
+                $filename = $uniqid . '.png';
+                $file->storeAs('public/storage/', $filename);
+                //$filename = $request->file('imagen')->store('posts','public');
             }
             // inicio de transaccion
             DB::beginTransaction();
