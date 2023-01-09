@@ -2,39 +2,39 @@
     "bundles": [
         {
             "name": "prefab/bolsa_2 variant",
-            "sVersion": "dd90550f51572608ea87efe26483153b"
+            "sVersion": "09354b61634dfdbac5014215e9c151da"
         },
         {
             "name": "prefab/bolsa_3 variant",
-            "sVersion": "5ea4ff0f4ce03580cb69bbdb044b2cb9"
+            "sVersion": "51e7b1338aec96fba935bc0e9bb6ce92"
         },
         {
             "name": "prefab/caja_1 variant",
-            "sVersion": "a21bc1388f3ce1813ea1b9132cb3b6b2"
+            "sVersion": "c71b1694cb0fb0c5cadeee1d292ab3ca"
         },
         {
             "name": "prefab/caja_2 variant",
-            "sVersion": "8fd3db0cad3728f4d08f2aa2a120d879"
+            "sVersion": "20c2a93954d4f1157bcd2944dbcfd6ee"
         },
         {
             "name": "prefab/caja_3 variant",
-            "sVersion": "8f710971bb575ed132f37a82e6ecda2e"
+            "sVersion": "6fd9bb675a09a290e6c68b81bfde5646"
         },
         {
             "name": "prefab/caja_4 variant",
-            "sVersion": "be7775342d46955333d8e74dc14d2ea4"
+            "sVersion": "38ba3b7794275c1560795a341916c81a"
         },
         {
             "name": "prefab/caja_5 variant",
-            "sVersion": "b710f9e763183d2be89ce6f562e7535b"
+            "sVersion": "1a2b6aa7b4a824da55370fa55b50622d"
         },
         {
             "name": "prefab/lata_1 variant",
-            "sVersion": "14329f24dfb4eefdceba431ca8108cf8"
+            "sVersion": "62c40297b28d64782f1a72c174125392"
         },
         {
             "name": "prefab/tubo_1 variant",
-            "sVersion": "726987d66ede8cb06862a13562642305"
+            "sVersion": "00a238c84b721651ba66516507b39280"
         }
     ]
 }
