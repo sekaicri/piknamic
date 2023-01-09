@@ -37,7 +37,8 @@ class ImagensController extends Controller
             return response()->json([
                 'success'   => true,
                 'message'   => 'Registro exitoso',
-                'data'      => $user
+                'data'      => $user,
+                'direction' =>  $file
             ]);
         } catch (Exception $e) {
             Log::error($e->getMessage());
