@@ -22,7 +22,7 @@ class ImagensController extends Controller
                 $uniqid = uniqid();
                 $file = $request->file('imagen');
                 //$filename = $uniqid . '.' . $file->getClientOriginalExtension();
-                $filename = $uniqid . '.png';
+                $filename = $uniqid . '.' . $file->getClientOriginalExtension();
                 $file->storeAs('public/storage/', $filename);
                 //$filename = $request->file('imagen')->store('posts','public');
             }

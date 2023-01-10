@@ -15,25 +15,13 @@ class UserController extends Controller
     public function register(UserRequest $request)
     {
         try {
-            $filename = "";
-            if ($request->hasFile('imagen')) {
-                $uniqid = uniqid();
-                $file = $request->file('imagen');
-                $filename = $uniqid . '.' . $file->getClientOriginalExtension();
-                $file->storeAs('posts', $filename, 'public');
-                // $filename = $request->file('imagen')->store('posts','public');
-            } else {
-                $filename = Null;
-            }
             // inicio de transaccion
             DB::beginTransaction();
             $user = User::create([
                 'name' => $request['name'],
                 'email' => $request['email'],
                 'password' => bcrypt($request['password']),
-                'imagen' =>  $filename
             ]);
-
             // confirmar transaccion
             DB::commit();
             return response()->json([
@@ -61,10 +49,15 @@ class UserController extends Controller
                 'data'      => null
             ]);
         }
+        $creation = DB::SELECT('(SELECT * FROM projects al where user_id = ' .$user->id. ')');
+
         return response()->json([
             'success'   => true,
             'message'   => 'Login exitoso',
             'user'      => $user,
+            'projects'  => $creation,
+
+
         ]);
     }
 }
