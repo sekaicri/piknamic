@@ -26,6 +26,7 @@ Route::post('/registerimagen', [ProjectController::class, 'registerImagen']);
 Route::post('/registerproject', [ProjectController::class, 'RegisterProject']);
 Route::post('/deleteImagen', [ProjectController::class, 'deleteImagen']);
 Route::post('/Updateproject', [ProjectController::class, 'UpdateProject']);
+Route::post('/showimage', [ProjectController::class, 'showimagens']);
 
 
 

@@ -54,6 +54,16 @@ class ProjectController extends Controller
         unlink($request->imagen);
     }
     
+    public function showimagens(Request $request)
+    {
+        $creation = DB::SELECT('(SELECT * FROM imagens al where project_id = ' .$request->project_id. ')');
+        return response()->json([
+            'data'      =>$creation
+        ]);
+    }
+
+
+
     public function UpdateProject(Request $request)
     {
         $user = project::find($request->id);
