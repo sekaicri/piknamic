@@ -54,6 +54,27 @@ class ProjectController extends Controller
         unlink($request->imagen);
     }
     
+    public function UpdateProject(Request $request)
+    {
+        $user = project::find($request->id);
+        if ($user) {
+            $request->update();
+            return response()->json([
+                'success'   => true,
+                'message'   => 'Los datos se actualizaron',
+                'data'      => null
+            ]);
+        }
+        else{
+            return response()->json([
+                'success'   => false,
+                'message'   => 'Los datos son incorrectos',
+                'data'      => null
+            ]);
+        }
+
+    }
+    
 
     public function RegisterProject(Request $request)
     {
@@ -64,7 +85,6 @@ class ProjectController extends Controller
             $user = project::create([
                 'name' => $request['name'],
                 'information' => $request['information'],
-                'preview' => $request['preview'],
                 'user_id' => $request['user_id']
 
             ]);
