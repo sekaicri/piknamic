@@ -78,31 +78,13 @@ class ProjectController extends Controller
 
     public function RegisterProject(Request $request)
     {
-    
-        try {
             // inicio de transaccion
-            DB::beginTransaction();
             $user = project::create([
                 'name' => $request['name'],
                 'information' => $request['information'],
                 'user_id' => $request['user_id']
 
             ]);
-            // confirmar transaccion
-            DB::commit();
-            return response()->json([
-                'success'   => true,
-                'message'   => 'Registro exitoso',
-                'data'      => $user
-            ]);
-        } catch (Exception $e) {
-            Log::error($e->getMessage());
-            DB::rollBack();
-            return response()->json([
-                'success' => false,
-                'message' => 'Error En La Generación De La Solicitud'
-            ], 500, [], JSON_PRETTY_PRINT);
-        }
     }
 
 }
