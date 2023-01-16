@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Support\Facades\DB;
 use App\Models\project;
 use App\Models\imagens;
@@ -23,7 +24,7 @@ class ProjectController extends Controller
             } else {
                 $filename = Null;
             }
-            $filename = 'http://www.piknamic.com/storage/'.$request->project_id.'/'.$filename;
+            $filename = 'http://www.piknamic.com/storage/' . $request->project_id . '/' . $filename;
             // inicio de transaccion
             DB::beginTransaction();
             $user = imagens::create([
@@ -47,18 +48,18 @@ class ProjectController extends Controller
             ], 500, [], JSON_PRETTY_PRINT);
         }
     }
-    
+
     public function deleteImagen(Request $request)
     {
         DB::table('imagens')->where('imagen', $request->imagen)->delete();
         unlink($request->imagen);
     }
-    
+
     public function showimagens(Request $request)
     {
-        $creation = DB::SELECT('(SELECT * FROM imagens al where project_id = ' .$request->project_id. ')');
+        $creation = DB::SELECT('(SELECT * FROM imagens al where project_id = ' . $request->project_id . ')');
         return response()->json([
-            'data'      =>$creation
+            'data'      => $creation
         ]);
     }
 
@@ -75,36 +76,47 @@ class ProjectController extends Controller
                 'message'   => 'Los datos se actualizaron',
                 'data'      => null
             ]);
-        }
-        else{
+        } else {
             return response()->json([
                 'success'   => false,
                 'message'   => 'Los datos son incorrectos',
                 'data'      => null
             ]);
         }
-
     }
-    
+
 
     public function RegisterProject(Request $request)
     {
         try {
-            // inicio de transaccion
-            DB::beginTransaction();
-            $user = project::create([
-                'name' => $request['name'],
-                'information' => $request['information'],
-                'user_id' => $request['user_id']
+            $project = project::find($request->name);
+            if ($project != null) {
+                $project->preview = $request->preview;
+                $project->name = $request->name;
+                $project->information = $request->information;
+                $project->update();
+                return response()->json([
+                    'success'   => true,
+                    'message'   => 'Los datos se actualizaron',
+                    'data'      => null
+                ]);
+            } else {
+                // inicio de transaccion
+                DB::beginTransaction();
+                $user = project::create([
+                    'name' => $request['name'],
+                    'information' => $request['information'],
+                    'user_id' => $request['user_id']
 
-            ]);
-            // confirmar transaccion
-            DB::commit();
-            return response()->json([
-                'success'   => true,
-                'message'   => 'Registro exitoso',
-                'data'      => $user
-            ]);
+                ]);
+                // confirmar transaccion
+                DB::commit();
+                return response()->json([
+                    'success'   => true,
+                    'message'   => 'Registro exitoso',
+                    'data'      => $user
+                ]);
+            }
         } catch (Exception $e) {
             Log::error($e->getMessage());
             DB::rollBack();
@@ -114,5 +126,4 @@ class ProjectController extends Controller
             ], 500, [], JSON_PRETTY_PRINT);
         }
     }
-
 }
