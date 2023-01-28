@@ -19,17 +19,17 @@ use App\Http\Controllers\ProjectController;
 |
 */
 
-Route::post('/password/email', [ForgotPasswordController::class, 'sendResetLinkEmail']);
-Route::post('/register', [UserController::class, 'register']);
-Route::post('/login', [UserController::class, 'login']);
-Route::post('/registerimagen', [ProjectController::class, 'registerImagen']);
-Route::post('/registerproject', [ProjectController::class, 'RegisterProject']);
-Route::post('/deleteImagen', [ProjectController::class, 'deleteImagen']);
-Route::post('/Updateproject', [ProjectController::class, 'UpdateProject']);
-Route::post('/showimage', [ProjectController::class, 'showimagens']);
 
-
-
+Route::group(['middleware' => ['cors']], function () {
+    Route::post('/password/email', [ForgotPasswordController::class, 'sendResetLinkEmail']);
+    Route::post('/register', [UserController::class, 'register']);
+    Route::post('/login', [UserController::class, 'login']);
+    Route::post('/registerimagen', [ProjectController::class, 'registerImagen']);
+    Route::post('/registerproject', [ProjectController::class, 'RegisterProject']);
+    Route::post('/deleteImagen', [ProjectController::class, 'deleteImagen']);
+    Route::post('/Updateproject', [ProjectController::class, 'UpdateProject']);
+    Route::post('/showimage', [ProjectController::class, 'showimagens']);
+});
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
