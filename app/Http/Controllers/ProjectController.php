@@ -91,7 +91,7 @@ class ProjectController extends Controller
     public function RegisterProject(Request $request)
     {
         try {
-            $project = project::find($request->name);
+            $project = project::find($request->id);
             if ($project != null) {
                 $project->preview = $request->preview;
                 $project->name = $request->name;
