@@ -19,7 +19,7 @@ class RequestLogin extends FormRequest
     {
         return [
             'password'=>'required|string',
-            'email'=>'required|string|email',
+            'email'=>'required|string|email|unique',
         ];
     }
     public function failedValidation(Validator $validator)
