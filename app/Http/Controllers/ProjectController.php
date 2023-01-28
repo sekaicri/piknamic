@@ -19,7 +19,7 @@ class ProjectController extends Controller
                 $uniqid = uniqid();
                 $file = $request->file('imagen');
                 $filename = $uniqid . '.' . $file->getClientOriginalExtension();
-                $file->storeAs($request->project_id, $filename, 'public');
+                $file->storeAs('storage/'.$request->project_id, $filename, 'public');
                 // $filename = $request->file('imagen')->store('posts','public');
             } else {
                 $filename = Null;
