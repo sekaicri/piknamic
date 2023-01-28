@@ -16,5 +16,6 @@ class project extends Authenticatable
         'preview',
         'information',
         'user_id',
+        "id",
     ];
 }
