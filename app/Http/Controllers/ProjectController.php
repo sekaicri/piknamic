@@ -70,6 +70,8 @@ class ProjectController extends Controller
         $user = project::find($request->id);
         if ($user) {
             $user->preview = $request->preview;
+            $user->information = $request->information;
+            $user->name = $request->name;
             $user->update();
             return response()->json([
                 'success'   => true,
