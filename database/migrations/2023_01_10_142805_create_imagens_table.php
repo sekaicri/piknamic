@@ -18,7 +18,7 @@ return new class extends Migration
             $table->TEXT('imagen');
             $table->timestamps();
             $table->unsignedBigInteger('project_id');
-            $table->foreign('project_id')->references('id')->on('project');
+            $table->foreign('project_id')->references('id')->on('projects');
 
         });
     }
