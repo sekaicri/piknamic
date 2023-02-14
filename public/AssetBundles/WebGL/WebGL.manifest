@@ -1,31 +1,31 @@
 ManifestFileVersion: 0
-CRC: 2101291995
+CRC: 913727683
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: prefab/caja_5 variant
-      Dependencies: {}
-    Info_1:
-      Name: prefab/bolsa_3 variant
-      Dependencies: {}
-    Info_2:
-      Name: prefab/caja_3 variant
-      Dependencies: {}
-    Info_3:
-      Name: prefab/lata_1 variant
-      Dependencies: {}
-    Info_4:
       Name: prefab/caja_1 variant
       Dependencies: {}
-    Info_5:
+    Info_1:
       Name: prefab/caja_4 variant
       Dependencies: {}
-    Info_6:
+    Info_2:
       Name: prefab/tubo_1 variant
       Dependencies: {}
-    Info_7:
+    Info_3:
       Name: prefab/bolsa_2 variant
       Dependencies: {}
-    Info_8:
+    Info_4:
       Name: prefab/caja_2 variant
+      Dependencies: {}
+    Info_5:
+      Name: prefab/caja_5 variant
+      Dependencies: {}
+    Info_6:
+      Name: prefab/bolsa_3 variant
+      Dependencies: {}
+    Info_7:
+      Name: prefab/caja_3 variant
+      Dependencies: {}
+    Info_8:
+      Name: prefab/lata_1 variant
       Dependencies: {}
