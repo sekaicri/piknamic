@@ -24,7 +24,7 @@ class ProjectController extends Controller
             } else {
                 $filename = Null;
             }
-            $filename = 'http://www.piknamic.com/storage/' . $request->project_id . '/' . $filename;
+            $filename = 'https://piknamic.com/storage/' . $request->project_id . '/' . $filename;
             // inicio de transaccion
             DB::beginTransaction();
             $user = imagens::create([
