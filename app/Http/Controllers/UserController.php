@@ -27,7 +27,7 @@ class UserController extends Controller
             return response()->json([
                 'success'   => true,
                 'message'   => 'Registro exitoso',
-                'data'      => $user
+                'user'      => $user
             ]);
         } catch (Exception $e) {
             Log::error($e->getMessage());
