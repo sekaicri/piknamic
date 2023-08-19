@@ -14,15 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    //aqui va tu pagina principal
+    return view('Welcome');
 });
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::group(['prefix' => 'Editor'], function () {
+Route::group(['prefix' => 'editor'], function () {
     Route::get('/', function () {
-        return view('index');
+        return view('Editor.index');
     });
 });
