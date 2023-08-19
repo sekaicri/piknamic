@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     //aqui va tu pagina principal
-    return view('welcome');
+    return view('index');
 });
 
 Auth::routes();
