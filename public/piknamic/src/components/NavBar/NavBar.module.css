@@ -1,0 +1,18 @@
+.mainContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 15px;
+    } 
+
+      .mainContainer {
+        display: flex;
+        align-items: center; /* Alinea verticalmente los elementos en el centro */
+      }
+    
+      .mainContainer {
+        justify-content: space-between;
+        
+      }
+      
+      

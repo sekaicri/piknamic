@@ -1,0 +1,55 @@
+
+
+.header {
+    margin: 20px;
+    grid-area: header;
+  }
+  
+  .boxOne{
+    margin: 20px;
+    grid-area: boxOne;
+  }
+  
+  .image3d {
+    margin: 20px;
+    grid-area: image3d;    
+  }
+
+  .text2 {
+    margin: 20px;
+    grid-area: text2;
+    max-width: 1600px; /* Establece el ancho máximo de la barra de navegación */
+    width: 100%;
+    margin: 0 auto; /* Centra horizontalmente la barra de navegación */
+    padding: 20px;  
+  }
+
+  .carousel1 {
+    margin: 20px;
+    grid-area: carousel1;    
+    max-width: 1600px; /* Establece el ancho máximo de la barra de navegación */
+    width: 100%;
+    margin: 0 auto; /* Centra horizontalmente la barra de navegación */
+    padding: 20px;
+  }
+
+  .container1 {
+    margin: 20px;
+    grid-area: carousel1;    
+    max-width: 1600px; /* Establece el ancho máximo de la barra de navegación */
+    width: 100%;
+    margin: 0 auto; /* Centra horizontalmente la barra de navegación */
+    padding: 20px;
+  }
+
+  .carousel2 {
+    margin: 20px;
+    grid-area: carousel2;    
+  }
+
+  .footer {
+        margin: 20px;
+    grid-area: footer; 
+   
+  }
+ 

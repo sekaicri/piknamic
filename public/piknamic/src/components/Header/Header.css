@@ -1,0 +1,31 @@
+@media screen and (max-width:900px) {
+  .header-container{
+    background-image: url("../../Images/Header.png");
+    background-size: 100% 100%    
+  }
+  .line{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width:900px) {
+  .header-container{
+    background-image: url("../../Images/Header.png");
+    background-size: 100% 100%
+  }
+  .line{
+    display: flex;
+    max-width: 1600px; /* Establece el ancho máximo de la barra de navegación */
+    width: 100%;
+    margin: 0 auto; /* Centra horizontalmente la barra de navegación */
+    padding: 20px;
+  }
+  .navbar {
+    max-width: 1600px; /* Establece el ancho máximo de la barra de navegación */
+    width: 100%;
+    margin: 0 auto; /* Centra horizontalmente la barra de navegación */
+    padding: 20px; 
+ 
+  }
+}

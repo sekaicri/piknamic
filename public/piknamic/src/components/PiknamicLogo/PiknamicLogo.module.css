@@ -1,0 +1,10 @@
+.mainContainer {
+  position: relative; /* Posición relativa para poder posicionar el logo */
+}
+
+.logo {  
+  top: 0px; /* Ajusta el valor para cambiar la posición vertical */
+  left: 10px; /* Ajusta el valor para cambiar la posición horizontal */
+  width: 200px; /* Ajusta el tamaño del logo */
+  height: auto; /* Ajusta la altura automáticamente según la proporción original */
+}

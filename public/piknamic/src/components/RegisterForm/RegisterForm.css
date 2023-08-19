@@ -1,0 +1,83 @@
+.registerForm .form-group input {
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 89%;
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+.password-input {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+.eye-icon:hover {
+  color: #ff0000;
+}
+
+.registrate {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Raleway-Black', sans-serif;
+  font-weight: 900;
+  color: #EE9A12;
+}
+
+.registerForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel {
+  max-width: 350px;  
+  position: absolute;
+  z-index: 1;
+}
+
+.formPanel {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column; /* Mostrar los elementos en una columna vertical */
+  align-items: center; /* Centrar horizontalmente los elementos */
+}
+
+.error-message {
+  font-size: 12px; /* Tamaño de fuente más pequeño */
+  color: #ff0000; /* Color del mensaje de error */
+  margin-top: -10px; 
+}
+
+.submit-button {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.submit-button button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Estilos para la imagen dentro del botón */
+.submit-button img {
+  width: 80%;
+  height: auto;
+}
