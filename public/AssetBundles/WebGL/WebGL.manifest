@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 785832871
+CRC: 1476665058
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -28,4 +28,7 @@ AssetBundleManifest:
       Dependencies: {}
     Info_8:
       Name: prefab/lata_1 variant
+      Dependencies: {}
+    Info_9:
+      Name: prefab/limon_completo
       Dependencies: {}
