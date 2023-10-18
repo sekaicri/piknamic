@@ -128,6 +128,8 @@
                 gameInstance = unityInstance;
                 loadingBar.style.display = "none";
 
+                gameInstance.SendMessage('DataFromWebReceiver', 'GetCookies', miDato);
+
             }).catch((message) => {
                 alert(message);
             });
