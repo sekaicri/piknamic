@@ -69,7 +69,7 @@
         }
 
         document.addEventListener("DOMContentLoaded", function() {
-            var miDato = obtenerCookie("laravel_session");
+            var miDato = obtenerCookie("XSRF-TOKEN");
             console.log("esteeeeeeeeee:" + miDato);
         });
 
