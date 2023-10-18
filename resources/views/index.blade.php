@@ -41,6 +41,7 @@
             // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
         }).then((unityInstance) => {
             gameInstance = unityInstance;
+            SendData(miDato);
         });
 
         let miDato;
