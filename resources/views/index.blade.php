@@ -68,6 +68,11 @@
             updateBannerVisibility();
         }
 
+        document.addEventListener("DOMContentLoaded", function() {
+            var miDato = obtenerCookie("XSRF-TOKEN");
+            console.log("esteeeeeeeeee:" + miDato);
+        });
+
         var buildUrl = "Build";
         var loaderUrl = buildUrl + "/Piknamic.loader.js";
         var config = {
@@ -123,16 +128,13 @@
                 gameInstance = unityInstance;
                 loadingBar.style.display = "none";
 
-                var miDato = obtenerCookie("XSRF-TOKEN");
-            console.log("esteeeeeeeeee:" + miDato);
+                gameInstance.SendMessage('DataFromWebReceiver', 'GetCookies', miDato);
 
-            gameInstance.SendMessage('DataFromWebReceiver', 'GetCookies', miDato);
             }).catch((message) => {
                 alert(message);
             });
         };
         document.body.appendChild(script);
-        
     </script>
 
     <!-- BEGIN WEBGL FILE BROWSER LIB -->
