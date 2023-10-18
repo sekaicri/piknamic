@@ -122,18 +122,16 @@
 
                 gameInstance = unityInstance;
                 loadingBar.style.display = "none";
+
+                var miDato = obtenerCookie("XSRF-TOKEN");
+            console.log("esteeeeeeeeee:" + miDato);
+
+            gameInstance.SendMessage('DataFromWebReceiver', 'GetCookies', miDato);
             }).catch((message) => {
                 alert(message);
             });
         };
         document.body.appendChild(script);
-
-        document.addEventListener("DOMContentLoaded", function() {
-            var miDato = obtenerCookie("XSRF-TOKEN");
-            console.log("esteeeeeeeeee:" + miDato);
-
-            gameInstance.SendMessage('DataFromWebReceiver', 'GetCookies', miDato);
-        });
         
     </script>
 
