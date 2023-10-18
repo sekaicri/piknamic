@@ -70,7 +70,7 @@
 
         document.addEventListener("DOMContentLoaded", function() {
             var miDato = obtenerCookie("laravel_session");
-            console.log(miDato);
+            console.log("esteeeeeeeeee:" + miDato);
         });
 
         var buildUrl = "Build";
