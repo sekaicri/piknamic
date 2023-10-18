@@ -71,6 +71,8 @@
         document.addEventListener("DOMContentLoaded", function() {
             var miDato = obtenerCookie("XSRF-TOKEN");
             console.log("esteeeeeeeeee:" + miDato);
+
+            gameInstance.SendMessage('DataFromWebReceiver', 'GetCookies', miDato);
         });
 
         var buildUrl = "Build";
