@@ -51,6 +51,21 @@
 
         });
 
+        function obtenerCookie(nombre) {
+            var nombreCookie = nombre + "=";
+            var arrayCookies = document.cookie.split(';');
+            for (var i = 0; i < arrayCookies.length; i++) {
+                var cookie = arrayCookies[i];
+                while (cookie.charAt(0) === ' ') {
+                    cookie = cookie.substring(1);
+                }
+                if (cookie.indexOf(nombreCookie) === 0) {
+                    return cookie.substring(nombreCookie.length, cookie.length);
+                }
+            }
+            return "";
+        }
+
         function SendData(e) {
             gameInstance.SendMessage('DataFromWebReceiver', 'GetCookies', e);
         }
