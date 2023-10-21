@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1598813259
+CRC: 175505261
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -31,4 +31,7 @@ AssetBundleManifest:
       Dependencies: {}
     Info_9:
       Name: prefab/limon_completo
+      Dependencies: {}
+    Info_10:
+      Name: prefab/particulas_hojas
       Dependencies: {}
