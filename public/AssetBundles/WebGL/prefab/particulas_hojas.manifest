@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 3600492951
+CRC: 4199470381
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 673a28800c2162bf9775ee56617dda64
+    Hash: 2a6662431d0c0b7fb8315010768abe21
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 6de8b1db3dd61d2c55e9dd6c2542f173
+    Hash: afda16579bc4844d6f62430771056fbd
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -52,6 +52,8 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 15be45c1c0e3b2f49ac010e1f7959db9, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 09f615a60b45f134cb8dda734cbf7fea, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -76,6 +78,8 @@ ClassTypes:
 SerializeReferenceClassIdentifiers:
 - AssemblyName: Assembly-CSharp
   ClassName: ButtonStyle/Style
+- AssemblyName: Assembly-CSharp
+  ClassName: InformationSetupElement
 - AssemblyName: Assembly-CSharp
   ClassName: TransformProperties
 - AssemblyName: Unity.TextMeshPro
