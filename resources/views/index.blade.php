@@ -121,7 +121,7 @@
     const claveSecreta = 'P1kn4m1c*2023';
     // Descifrar los datos utilizando AES y la clave secreta
     const bytesUserDataCifrado = CryptoJS.enc.Base64.parse(userDataCifrado);
-    const bytesUserDataDescifrado = CryptoJS.AES.decrypt({ ciphertext: bytesUserDataCifrado }, claveSecreta);
+    const bytesUserDataDescifrado = CryptoJS.AES.decrypt({ ciphertext: bytesUserDataCifrado , claveSecreta});
     const jsonStringUserData = bytesUserDataDescifrado.toString(CryptoJS.enc.Utf8);
     // Convertir las cadenas JSON descifradas de vuelta a objetos
     const userData = JSON.parse(jsonStringUserData);
