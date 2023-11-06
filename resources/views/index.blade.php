@@ -114,7 +114,7 @@
       document.addEventListener("DOMContentLoaded", function() {
            // Accede al dato almacenado en el local storage  
         const user = localStorage.getItem("userData");
-            console.log(user); 
+            console.log(document.cookie); 
         });
     </script>
   
