@@ -122,10 +122,13 @@
             const decryptedData = JSON.parse(decryptedBytes.toString(CryptoJS.enc.Utf8));
 
           console.log(decryptedData);
+
+          while (gameInstance == null){
+            console.log("wait");
+          }
+          gameInstance.SendMessage('DataFromWebReceiver','GetCookies',decryptedData);
      });
 
-     
- 
     </script>
   
     <!-- BEGIN WEBGL FILE BROWSER LIB -->
