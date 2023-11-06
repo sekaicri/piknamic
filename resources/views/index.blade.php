@@ -116,22 +116,16 @@
     const urlParams = new URLSearchParams(window.location.search);
 
     const userDataCifrado = urlParams.get('userData');
-    const projectsCifrado = urlParams.get('projects');
     
     // Clave secreta para descifrar
     const claveSecreta = 'P1kn4m1c*2023';
     // Descifrar los datos utilizando AES y la clave secreta
     const bytesUserDataCifrado = CryptoJS.enc.Base64.parse(userDataCifrado);
-    const bytesProjectsCifrado = CryptoJS.enc.Base64.parse(projectsCifrado);
     const bytesUserDataDescifrado = CryptoJS.AES.decrypt({ ciphertext: bytesUserDataCifrado }, claveSecreta);
-    const bytesProjectsDescifrado = CryptoJS.AES.decrypt({ ciphertext: bytesProjectsCifrado }, claveSecreta);
     const jsonStringUserData = bytesUserDataDescifrado.toString(CryptoJS.enc.Utf8);
-    const jsonStringProjects = bytesProjectsDescifrado.toString(CryptoJS.enc.Utf8); 
     // Convertir las cadenas JSON descifradas de vuelta a objetos
     const userData = JSON.parse(jsonStringUserData);
-    const projects = JSON.parse(jsonStringProjects);
     console.log('Datos de usuario descifrados:', userData);
-    console.log('Datos de proyectos descifrados:', projects);
      });
  
     </script>
