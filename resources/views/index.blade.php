@@ -110,6 +110,12 @@
         });
       };
       document.body.appendChild(script);
+
+      document.addEventListener("DOMContentLoaded", function() {
+           // Accede al dato almacenado en el local storage  
+        const user = localStorage.getItem("userData");
+            console.log(user); 
+        });
     </script>
   
     <!-- BEGIN WEBGL FILE BROWSER LIB -->
