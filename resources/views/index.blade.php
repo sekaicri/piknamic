@@ -28,7 +28,7 @@
       var progressBarFull = document.querySelector("#unity-progress-bar-full");
       var fullscreenButton = document.querySelector("#unity-fullscreen-button");
       var warningBanner = document.querySelector("#unity-warning");
-
+      var decryptedData;
       // Shows a temporary message banner/ribbon for a few seconds, or
       // a permanent error message on top of the canvas if type=='error'.
       // If type=='warning', a yellow highlight color is used.
@@ -105,7 +105,8 @@
         }).then((unityInstance) => {
 
           gameInstance = unityInstance;
-          loadingBar.style.display = "none";         
+          loadingBar.style.display = "none";   
+          gameInstance.SendMessage('DataFromWebReceiver','GetCookies',decryptedData);      
         }).catch((message) => {
           alert(message);
         });
@@ -119,14 +120,9 @@
            // Descifrar los datos utilizando AES y la clave secreta
             const encryptedDataFromUrl = decodeURIComponent(urlParams.get("userData"));
             const decryptedBytes = CryptoJS.AES.decrypt(encryptedDataFromUrl, claveSecreta);
-            const decryptedData = JSON.parse(decryptedBytes.toString(CryptoJS.enc.Utf8));
+            decryptedData = JSON.parse(decryptedBytes.toString(CryptoJS.enc.Utf8));
 
           console.log(decryptedData);
-
-          while (gameInstance == null){
-            console.log("wait");
-          }
-          gameInstance.SendMessage('DataFromWebReceiver','GetCookies',decryptedData);
      });
 
     </script>
