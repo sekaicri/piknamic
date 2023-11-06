@@ -114,13 +114,10 @@
 
     document.addEventListener("DOMContentLoaded", function() {
         const urlParams = new URLSearchParams(window.location.search);
-        const userDataCifrado = urlParams.get('userData');
-         // Decodificar el parámetro de la URL
-         const userDataCodificado = decodeURIComponent(userDataCifrado);
           // Clave secreta utilizada para cifrar los datos
           const claveSecreta = 'P1kn4m1c*2023';
            // Descifrar los datos utilizando AES y la clave secreta
-            const encryptedDataFromUrl = decodeURIComponent(params.get("data"));
+            const encryptedDataFromUrl = decodeURIComponent(params.get("userData"));
             const decryptedBytes = CryptoJS.AES.decrypt(encryptedDataFromUrl, claveSecreta);
             const decryptedData = JSON.parse(decryptedBytes.toString(CryptoJS.enc.Utf8));
 
