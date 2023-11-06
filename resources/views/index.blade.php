@@ -120,7 +120,7 @@
            // Descifrar los datos utilizando AES y la clave secreta
             const encryptedDataFromUrl = decodeURIComponent(urlParams.get("userData"));
             const decryptedBytes = CryptoJS.AES.decrypt(encryptedDataFromUrl, claveSecreta);
-            decryptedData = JSON.parse(decryptedBytes.toString(CryptoJS.enc.Utf8));
+            decryptedData = (decryptedBytes.toString(CryptoJS.enc.Utf8));
 
           console.log(decryptedData);
      });
