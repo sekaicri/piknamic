@@ -6,6 +6,7 @@
     <title>Mockups dinámicos para Branding | Piknamic</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
   </head>
   <body>
   <div id="unity-container" style="width: 100%; height: 100%">
