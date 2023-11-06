@@ -115,25 +115,18 @@
     document.addEventListener("DOMContentLoaded", function() {
     const urlParams = new URLSearchParams(window.location.search);
     const userDataCifrado = urlParams.get('userData');
-    
+    const userDataCodificado = decodeURIComponent(userDataCifrado);
+
     // Clave secreta para descifrar
     const claveSecreta = 'P1kn4m1c*2023';
-
     // Descifrar los datos utilizando AES y la clave secreta
-    const bytesUserDataCifrado = CryptoJS.enc.Base64.parse(userDataCifrado);
-    const bytesUserDataDescifrado = CryptoJS.AES.decrypt({
-        ciphertext: bytesUserDataCifrado
-    }, CryptoJS.enc.Utf8.parse(claveSecreta), {
-        mode: CryptoJS.mode.ECB,
-        padding: CryptoJS.pad.Pkcs7
-    });
-    
+    const bytesUserDataCifrado = CryptoJS.enc.Base64.parse(userDataCodificado);
+    const bytesUserDataDescifrado = CryptoJS.AES.decrypt({ ciphertext: bytesUserDataCifrado }, claveSecreta);
     const jsonStringUserData = bytesUserDataDescifrado.toString(CryptoJS.enc.Utf8);
-
     // Convertir las cadenas JSON descifradas de vuelta a objetos
     const userData = JSON.parse(jsonStringUserData);
     console.log('Datos de usuario descifrados:', userData);
-});
+     });
  
     </script>
   
