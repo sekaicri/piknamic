@@ -111,11 +111,11 @@
       };
       document.body.appendChild(script);
 
-      document.addEventListener("DOMContentLoaded", function() {
-           // Accede al dato almacenado en el local storage  
-        const user = localStorage.getItem("userData");
-            console.log(document.cookie); 
-        });
+      window.addEventListener("message", function(event) {   
+        // Accede al nombre de usuario    
+        const user = event.data.value;     
+        // Imprime el nombre de usuario    
+            console.log(user); });
     </script>
   
     <!-- BEGIN WEBGL FILE BROWSER LIB -->
