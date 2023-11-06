@@ -106,7 +106,6 @@
 
           gameInstance = unityInstance;
           loadingBar.style.display = "none";   
-          gameInstance.SendMessage('DataFromWebReceiver','GetCookies',decryptedData);      
         }).catch((message) => {
           alert(message);
         });
@@ -125,6 +124,10 @@
           console.log(decryptedData);
      });
 
+     function ReturnUserData(){
+        console.log("aqui toy");
+        gameInstance.SendMessage('DataFromWebReceiver','GetCookies',decryptedData);      
+     }
     </script>
   
     <!-- BEGIN WEBGL FILE BROWSER LIB -->
