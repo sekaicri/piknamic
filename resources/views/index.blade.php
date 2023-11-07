@@ -111,8 +111,23 @@
         });
       };
       document.body.appendChild(script);
+      
+    document.addEventListener("DOMContentLoaded", function() {
+        const urlParams = new URLSearchParams(window.location.search);
+          // Clave secreta utilizada para cifrar los datos
+          const claveSecreta = 'P1kn4m1c*2023';
+           // Descifrar los datos utilizando AES y la clave secreta
+            const encryptedDataFromUrl = decodeURIComponent(urlParams.get("userData"));
+            const decryptedBytes = CryptoJS.AES.decrypt(encryptedDataFromUrl, claveSecreta);
+            decryptedData = (decryptedBytes.toString(CryptoJS.enc.Utf8));
 
-   
+          console.log(decryptedData);
+     });
+
+     function ReturnUserData(){
+        console.log("aqui toy");
+        gameInstance.SendMessage('DataFromWebReceiver','GetCookies',decryptedData);      
+     }
     </script>
   
     <!-- BEGIN WEBGL FILE BROWSER LIB -->
