@@ -9,6 +9,7 @@ use Exception;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
@@ -49,7 +50,7 @@ class UserController extends Controller
                 'data'      => null
             ]);
         }
-        $creation = DB::SELECT('(SELECT * FROM projects al where user_id = ' .$user->id. ')');
+        $creation = DB::select('SELECT * FROM projects WHERE user_id = ?', [$user->id]);
 
         return response()->json([
             'success'   => true,
@@ -58,4 +59,29 @@ class UserController extends Controller
             'projects'  => $creation,
         ]);
     }
+
+    public function loginWithIdAndEmail(Request $request)
+    {
+        $user = User::where('id', $request->input('id'))
+                    ->where('email', $request->input('email'))
+                    ->first();
+    
+        if (!$user) {
+            return response()->json([
+                'success'   => false,
+                'message'   => 'Los datos son incorrectos',
+                'data'      => null
+            ]);
+        }
+    
+        $creation = DB::select('SELECT * FROM projects WHERE user_id = ?', [$user->id]);
+    
+        return response()->json([
+            'success'   => true,
+            'message'   => 'Login exitoso',
+            'user'      => $user,
+            'projects'  => $creation,
+        ]);
+    }
+    
 }
