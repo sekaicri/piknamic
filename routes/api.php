@@ -28,7 +28,7 @@ use App\Http\Controllers\ProjectController;
     Route::post('/deleteImagen', [ProjectController::class, 'deleteImagen']);
     Route::post('/Updateproject', [ProjectController::class, 'UpdateProject']);
     Route::post('/showimage', [ProjectController::class, 'showimagens']);
-    Route::post('/loginId', [UserController::class, '    loginWithIdAndEmail']);
+    Route::post('/loginId', [UserController::class, 'loginWithIdAndEmail']);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
