@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 432898153
+CRC: 1882673574
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -30,179 +30,23 @@ AssetBundleManifest:
       Name: prefab/lata_1 variant
       Dependencies: {}
     Info_9:
-      Name: prefab/limon_completo
-      Dependencies: {}
-    Info_10:
-      Name: prefab/limon_mitad
-      Dependencies: {}
-    Info_11:
-      Name: prefab/limon_rebanada
-      Dependencies: {}
-    Info_12:
-      Name: prefab/manzana_verde
-      Dependencies: {}
-    Info_13:
-      Name: prefab/naranja_completa
-      Dependencies: {}
-    Info_14:
-      Name: prefab/naranja_mitad
-      Dependencies: {}
-    Info_15:
-      Name: prefab/naranja_parte
-      Dependencies: {}
-    Info_16:
-      Name: prefab/naranja_rebanada
-      Dependencies: {}
-    Info_17:
-      Name: prefab/a
-      Dependencies: {}
-    Info_18:
-      Name: prefab/b
-      Dependencies: {}
-    Info_19:
-      Name: prefab/c
-      Dependencies: {}
-    Info_20:
-      Name: prefab/d
-      Dependencies: {}
-    Info_21:
-      Name: prefab/e
-      Dependencies: {}
-    Info_22:
-      Name: prefab/f
-      Dependencies: {}
-    Info_23:
-      Name: prefab/g
-      Dependencies: {}
-    Info_24:
-      Name: prefab/h
-      Dependencies: {}
-    Info_25:
-      Name: prefab/i
-      Dependencies: {}
-    Info_26:
-      Name: prefab/j
-      Dependencies: {}
-    Info_27:
-      Name: prefab/k
-      Dependencies: {}
-    Info_28:
-      Name: prefab/l
-      Dependencies: {}
-    Info_29:
-      Name: prefab/m
-      Dependencies: {}
-    Info_30:
-      Name: prefab/n
-      Dependencies: {}
-    Info_31:
-      Name: prefab/o
-      Dependencies: {}
-    Info_32:
-      Name: prefab/p
-      Dependencies: {}
-    Info_33:
-      Name: prefab/q
-      Dependencies: {}
-    Info_34:
-      Name: prefab/r
-      Dependencies: {}
-    Info_35:
-      Name: prefab/s
-      Dependencies: {}
-    Info_36:
-      Name: prefab/t
-      Dependencies: {}
-    Info_37:
-      Name: prefab/u
-      Dependencies: {}
-    Info_38:
-      Name: prefab/w
-      Dependencies: {}
-    Info_39:
-      Name: prefab/x
-      Dependencies: {}
-    Info_40:
-      Name: prefab/y
-      Dependencies: {}
-    Info_41:
-      Name: prefab/z
-      Dependencies: {}
-    Info_42:
       Name: prefab/particulas_hojas
       Dependencies: {}
-    Info_43:
-      Name: prefab/aro
-      Dependencies: {}
-    Info_44:
-      Name: prefab/cilindro
-      Dependencies: {}
-    Info_45:
-      Name: prefab/cono
-      Dependencies: {}
-    Info_46:
-      Name: prefab/corazon
-      Dependencies: {}
-    Info_47:
+    Info_10:
       Name: prefab/cubo
       Dependencies: {}
-    Info_48:
-      Name: prefab/escalera
-      Dependencies: {}
-    Info_49:
-      Name: prefab/esfera
-      Dependencies: {}
-    Info_50:
-      Name: prefab/estrella
-      Dependencies: {}
-    Info_51:
-      Name: prefab/forma1
-      Dependencies: {}
-    Info_52:
-      Name: prefab/piramide
-      Dependencies: {}
-    Info_53:
-      Name: prefab/0
-      Dependencies: {}
-    Info_54:
-      Name: prefab/1
-      Dependencies: {}
-    Info_55:
-      Name: prefab/2
-      Dependencies: {}
-    Info_56:
-      Name: prefab/3
-      Dependencies: {}
-    Info_57:
-      Name: prefab/4
-      Dependencies: {}
-    Info_58:
-      Name: prefab/5
-      Dependencies: {}
-    Info_59:
-      Name: prefab/6
-      Dependencies: {}
-    Info_60:
-      Name: prefab/7
-      Dependencies: {}
-    Info_61:
-      Name: prefab/8
-      Dependencies: {}
-    Info_62:
-      Name: prefab/9
-      Dependencies: {}
-    Info_63:
+    Info_11:
       Name: prefab/planta1
       Dependencies: {}
-    Info_64:
+    Info_12:
       Name: prefab/planta2
       Dependencies: {}
-    Info_65:
+    Info_13:
       Name: prefab/planta3
       Dependencies: {}
-    Info_66:
+    Info_14:
       Name: prefab/planta4
       Dependencies: {}
-    Info_67:
+    Info_15:
       Name: prefab/planta5
       Dependencies: {}
