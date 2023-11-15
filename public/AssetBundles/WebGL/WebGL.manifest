@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1305185785
+CRC: 978678863
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -205,4 +205,19 @@ AssetBundleManifest:
       Dependencies: {}
     Info_67:
       Name: prefab/planta5
+      Dependencies: {}
+    Info_68:
+      Name: prefab/almohada
+      Dependencies: {}
+    Info_69:
+      Name: prefab/bolsa
+      Dependencies: {}
+    Info_70:
+      Name: prefab/camisa
+      Dependencies: {}
+    Info_71:
+      Name: prefab/gorra
+      Dependencies: {}
+    Info_72:
+      Name: prefab/hoodie
       Dependencies: {}
