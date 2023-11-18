@@ -70,7 +70,7 @@
         },
         {
             "name": "prefab/brochure",
-            "sVersion": "18ebc8b762e2c4fbbd0691192e106212"
+            "sVersion": "f80d5046c18105f8466437cce798552f"
         },
         {
             "name": "prefab/c",
@@ -202,7 +202,7 @@
         },
         {
             "name": "prefab/mug",
-            "sVersion": "218312c4d7424b4a943697e58b4da05a"
+            "sVersion": "dd3d9aa53c36f89c13206585722c3268"
         },
         {
             "name": "prefab/n",
@@ -270,7 +270,7 @@
         },
         {
             "name": "prefab/revista",
-            "sVersion": "7a41344abf9d4cccb22395636e6e9b32"
+            "sVersion": "4c3fd6895ebb56097e152d32f62be0f7"
         },
         {
             "name": "prefab/s",
@@ -278,7 +278,7 @@
         },
         {
             "name": "prefab/sombrilla",
-            "sVersion": "1a03cc218b310f193af8f826390be556"
+            "sVersion": "02a5b87a01d4817aa7fd72b975b4cf14"
         },
         {
             "name": "prefab/t",
@@ -286,7 +286,7 @@
         },
         {
             "name": "prefab/tarjeta",
-            "sVersion": "76d8e6261232796aa8e8466f0ba9ebea"
+            "sVersion": "67a86f220f9a6f09a2c1a8558f20ac26"
         },
         {
             "name": "prefab/tubo_1 variant",
