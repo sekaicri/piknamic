@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 884270412
+CRC: 2687838510
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -220,4 +220,19 @@ AssetBundleManifest:
       Dependencies: {}
     Info_72:
       Name: prefab/hoodie
+      Dependencies: {}
+    Info_73:
+      Name: prefab/brochure
+      Dependencies: {}
+    Info_74:
+      Name: prefab/mug
+      Dependencies: {}
+    Info_75:
+      Name: prefab/revista
+      Dependencies: {}
+    Info_76:
+      Name: prefab/sombrilla
+      Dependencies: {}
+    Info_77:
+      Name: prefab/tarjeta
       Dependencies: {}
