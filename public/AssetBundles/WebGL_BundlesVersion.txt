@@ -46,7 +46,7 @@
         },
         {
             "name": "prefab/almohada",
-            "sVersion": "bd8c1b1712c0923c81feef2c09f25d96"
+            "sVersion": "e2879474771445b5526ba63ab926b3df"
         },
         {
             "name": "prefab/aro",
@@ -58,19 +58,19 @@
         },
         {
             "name": "prefab/bolsa",
-            "sVersion": "290212d6c3c9c4ebc34cd9b0dae51635"
+            "sVersion": "0f7b5728f28fb44c9e7f5c2926f37960"
         },
         {
             "name": "prefab/bolsa_2 variant",
-            "sVersion": "6993ca8d6126a52e5e948a17e99267bd"
+            "sVersion": "71444120ddcd185a506267626b9fa273"
         },
         {
             "name": "prefab/bolsa_3 variant",
-            "sVersion": "9ad11989890fe1e4176c4c9e86c817ba"
+            "sVersion": "3229412b8efd5866b313c8ccde7fc740"
         },
         {
             "name": "prefab/brochure",
-            "sVersion": "0d1c62c601042abe4f9eda4d31818814"
+            "sVersion": "10d72f51ca9e7ba8cf044ff413a0409d"
         },
         {
             "name": "prefab/c",
@@ -78,27 +78,27 @@
         },
         {
             "name": "prefab/caja_1 variant",
-            "sVersion": "d7c82859a48f833125a8b7df30f286b3"
+            "sVersion": "1bdc422b39d2e403b0edf8531f2143b0"
         },
         {
             "name": "prefab/caja_2 variant",
-            "sVersion": "6ea72a94fcdada5f602c778a56abf7ac"
+            "sVersion": "e85b9296d0c3b9a6554741e7165976f0"
         },
         {
             "name": "prefab/caja_3 variant",
-            "sVersion": "82d0f0beb1bd09b96de98d4fc610296a"
+            "sVersion": "d10d6ff53a62ca30082b0b3b9c83e36f"
         },
         {
             "name": "prefab/caja_4 variant",
-            "sVersion": "3f698c6face73959e5e65233ec0097f1"
+            "sVersion": "3dd876477d10ff21ac16b6fe6c7214e8"
         },
         {
             "name": "prefab/caja_5 variant",
-            "sVersion": "61a63be13b30fbe541292c67c265a56b"
+            "sVersion": "5cbd3a3647e2e7da26292d22bbd992ac"
         },
         {
             "name": "prefab/camisa",
-            "sVersion": "16476f18be1e7fe58f8e23ad60b9adc0"
+            "sVersion": "a29a5150ddf6e09446092af0a221699e"
         },
         {
             "name": "prefab/cilindro",
@@ -150,7 +150,7 @@
         },
         {
             "name": "prefab/gorra",
-            "sVersion": "e9d4656e76afbd696f2ae6139ed7ab4d"
+            "sVersion": "10a9b28143faffb8b9bf363c6099369b"
         },
         {
             "name": "prefab/h",
@@ -158,7 +158,7 @@
         },
         {
             "name": "prefab/hoodie",
-            "sVersion": "90cb3796bc6778da795912856c4cc3d8"
+            "sVersion": "131ccb033bb19702e3b31ed8467d62b5"
         },
         {
             "name": "prefab/i",
@@ -178,7 +178,7 @@
         },
         {
             "name": "prefab/lata_1 variant",
-            "sVersion": "0884f1005b68f3e055f54ae94c885646"
+            "sVersion": "3ed7facafe52a56b80b630196dc38fb0"
         },
         {
             "name": "prefab/limon_completo",
@@ -202,7 +202,7 @@
         },
         {
             "name": "prefab/mug",
-            "sVersion": "06ee06a20614f8fe448920fbcb6f3cb9"
+            "sVersion": "62f35667eb390bcf63f415a86bca92d5"
         },
         {
             "name": "prefab/n",
@@ -270,7 +270,7 @@
         },
         {
             "name": "prefab/revista",
-            "sVersion": "25eec99793f3580894337a7cce521f53"
+            "sVersion": "a501a5625aa40a4cd83652372bdf4c83"
         },
         {
             "name": "prefab/s",
@@ -278,7 +278,7 @@
         },
         {
             "name": "prefab/sombrilla",
-            "sVersion": "a45b68f547cddda0ce0e45e58fd82b19"
+            "sVersion": "4205ee9b1e30a53214916a2e4fbbd584"
         },
         {
             "name": "prefab/t",
@@ -286,11 +286,11 @@
         },
         {
             "name": "prefab/tarjeta",
-            "sVersion": "02be1762e2a96cccafe386089bfea8d6"
+            "sVersion": "534f676f18cfd4b6a48ab66a23d82630"
         },
         {
             "name": "prefab/tubo_1 variant",
-            "sVersion": "3765eb46f61de6b179e5f8197a1393a1"
+            "sVersion": "ba30335f1dac6c761d1069b6443c8c02"
         },
         {
             "name": "prefab/u",
