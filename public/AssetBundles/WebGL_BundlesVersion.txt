@@ -62,7 +62,7 @@
         },
         {
             "name": "prefab/bolsa_1",
-            "sVersion": "72da04914dc0f4de2abc3f25179dac0f"
+            "sVersion": "862f9ab36de0da7b91c055725ac8d71f"
         },
         {
             "name": "prefab/bolsa_2 variant",
