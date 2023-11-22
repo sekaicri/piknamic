@@ -178,7 +178,7 @@
         },
         {
             "name": "prefab/frasco_1",
-            "sVersion": "d68aab9221169d0c4108174f2c91142f"
+            "sVersion": "5885b59f1f1cec9086ca9caecda7e359"
         },
         {
             "name": "prefab/g",
