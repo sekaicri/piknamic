@@ -102,7 +102,7 @@
         },
         {
             "name": "prefab/brochure",
-            "sVersion": "2adb065f1a6e03152c07ec3d20462396"
+            "sVersion": "0780be2fb77b59af506e8853e7ad7abe"
         },
         {
             "name": "prefab/c",
@@ -178,7 +178,7 @@
         },
         {
             "name": "prefab/frasco_1",
-            "sVersion": "5885b59f1f1cec9086ca9caecda7e359"
+            "sVersion": "d68aab9221169d0c4108174f2c91142f"
         },
         {
             "name": "prefab/g",
@@ -218,7 +218,7 @@
         },
         {
             "name": "prefab/lata_2",
-            "sVersion": "81fd843cc938af98c48310b380aaa470"
+            "sVersion": "54d7310a30ee723d5b0242433c8a9278"
         },
         {
             "name": "prefab/limon_completo",
@@ -242,7 +242,7 @@
         },
         {
             "name": "prefab/mug",
-            "sVersion": "18e04ef8e2762454764e0d1d3d810c84"
+            "sVersion": "c905b44c3e13ffb4e880b1b4536eda7c"
         },
         {
             "name": "prefab/n",
@@ -310,7 +310,7 @@
         },
         {
             "name": "prefab/revista",
-            "sVersion": "cf7da0ca79fb38b952e2b2e14e6263a4"
+            "sVersion": "56013ac795fb76366323a34f19fdf234"
         },
         {
             "name": "prefab/s",
@@ -318,7 +318,7 @@
         },
         {
             "name": "prefab/sombrilla",
-            "sVersion": "388d524a33489add56281c02069bd53c"
+            "sVersion": "b1ec6757854ad39fe79033bd9f8cdecf"
         },
         {
             "name": "prefab/t",
@@ -326,7 +326,7 @@
         },
         {
             "name": "prefab/tarjeta",
-            "sVersion": "c117b37ce5af2e9cc6bfc4184b37131b"
+            "sVersion": "8fb746653937798f2c029a3a096e8162"
         },
         {
             "name": "prefab/tubo_1 variant",
