@@ -1,17 +1,19 @@
 ManifestFileVersion: 0
-CRC: 4226429754
+CRC: 750304937
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: b1ec6757854ad39fe79033bd9f8cdecf
+    Hash: c7bfe5f6e9b407e74ed15c4a31ef0796
   TypeTreeHash:
     serializedVersion: 2
-    Hash: dde9e6956b2f4ebfbd3ac865b3f4cb08
+    Hash: fdb091ed806d621034ad99b228434c6d
 HashAppended: 0
 ClassTypes:
 - Class: 1
   Script: {instanceID: 0}
 - Class: 4
+  Script: {instanceID: 0}
+- Class: 20
   Script: {instanceID: 0}
 - Class: 21
   Script: {instanceID: 0}
@@ -46,6 +48,8 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 5c9d7d4259ad0dd4bb6acdd058b456af, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 1a050537d2f844ad98abece77142c8b3, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 15be45c1c0e3b2f49ac010e1f7959db9, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: a66722e2f330433498ea491b10c4aba1, type: 3}
@@ -54,12 +58,18 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: f07e2261f4c6e5b4ead30d2abdd6ecca, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 7b3393d773db443d18bfb7356381fe67, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: cf42d1b0eb84d6743b0ae9289ecfa9fc, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: a1483d823035b3b4796c4c52bdecd60d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e2b1a5ba7cbf94b5598f453b4c39f01a, type: 3}
 - Class: 115
+  Script: {instanceID: 0}
+- Class: 119
   Script: {instanceID: 0}
 - Class: 128
   Script: {instanceID: 0}
@@ -76,6 +86,8 @@ ClassTypes:
 SerializeReferenceClassIdentifiers:
 - AssemblyName: Assembly-CSharp
   ClassName: ButtonStyle/Style
+- AssemblyName: Assembly-CSharp
+  ClassName: DynamicShadowProjector.DrawTargetObject/ReplaceShader
 - AssemblyName: Assembly-CSharp
   ClassName: InformationSetupElement
 - AssemblyName: Assembly-CSharp
