@@ -39,24 +39,34 @@ class UserController extends Controller
             ], 500, [], JSON_PRETTY_PRINT);
         }
     }
+
     public function login(RequestLogin $request)
     {
-
         $user = User::where('email', $request['email'])->first();
+    
         if (!$user || !Hash::check($request['password'], $user->password)) {
             return response()->json([
-                'success'   => false,
-                'message'   => 'Los datos son incorrectos',
-                'data'      => null
+                'success' => false,
+                'message' => 'Los datos son incorrectos',
+                'data'    => null
             ]);
         }
-        $creation = DB::select('SELECT * FROM projects WHERE user_id = ?', [$user->id]);
-
+    
+        $projects = DB::table('projects')->where('user_id', $user->id)->get();
+    
+        foreach ($projects as $project) {
+            $information = json_decode($project->information, true);
+    
+            if (isset($information['name']) && $information['name'] === 'newproject') {
+                DB::table('projects')->where('id', $project->id)->delete();
+            }
+        }
+    
         return response()->json([
-            'success'   => true,
-            'message'   => 'Login exitoso',
-            'user'      => $user,
-            'projects'  => $creation,
+            'success'  => true,
+            'message'  => 'Login exitoso',
+            'user'     => $user,
+            'projects' => $projects,
         ]);
     }
 
