@@ -55,9 +55,8 @@ class UserController extends Controller
         $projects = DB::table('projects')->where('user_id', $user->id)->get();
     
         foreach ($projects as $project) {
-            $information = json_decode($project->information, true);
-    
-            if (isset($information['name']) && $information['name'] === 'newproject') {
+            if (strpos($project->information, 'newproject') !== false) {
+                // Eliminar el proyecto
                 DB::table('projects')->where('id', $project->id)->delete();
             }
         }
