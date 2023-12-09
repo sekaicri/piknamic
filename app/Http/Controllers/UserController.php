@@ -54,18 +54,21 @@ class UserController extends Controller
     
         $projects = DB::table('projects')->where('user_id', $user->id)->get();
     
-        foreach ($projects as $project) {
-            if (strpos($project->information, 'newproject') !== false) {
-                // Eliminar el proyecto
-                DB::table('projects')->where('id', $project->id)->delete();
-            }
+        $projectsArray = $projects->toArray();
+        $filteredProjects = array_filter($projectsArray, function ($project) {
+            return strpos($project->information, 'newproject') === false;
+        });
+    
+        $deletedProjects = array_diff(array_column($projectsArray, 'id'), array_column($filteredProjects, 'id'));
+        if (!empty($deletedProjects)) {
+            DB::table('projects')->whereIn('id', $deletedProjects)->delete();
         }
     
         return response()->json([
             'success'  => true,
             'message'  => 'Login exitoso',
             'user'     => $user,
-            'projects' => $projects,
+            'projects' => array_values($filteredProjects),
         ]);
     }
 
@@ -77,19 +80,28 @@ class UserController extends Controller
     
         if (!$user) {
             return response()->json([
-                'success'   => false,
-                'message'   => 'Los datos son incorrectos',
-                'data'      => null
+                'success' => false,
+                'message' => 'Los datos son incorrectos',
+                'data'    => null
             ]);
         }
     
-        $creation = DB::select('SELECT * FROM projects WHERE user_id = ?', [$user->id]);
+        $projects = DB::table('projects')->where('user_id', $user->id)->get();
+    
+        $filteredProjects = $projects->reject(function ($project) {
+            return strpos($project->information, 'newproject') !== false;
+        });
+    
+        $deletedProjects = $projects->pluck('id')->diff($filteredProjects->pluck('id')->toArray());
+        if ($deletedProjects->isNotEmpty()) {
+            DB::table('projects')->whereIn('id', $deletedProjects)->delete();
+        }
     
         return response()->json([
-            'success'   => true,
-            'message'   => 'Login exitoso',
-            'user'      => $user,
-            'projects'  => $creation,
+            'success'  => true,
+            'message'  => 'Login exitoso',
+            'user'     => $user,
+            'projects' => $filteredProjects->values(),
         ]);
     }
     
