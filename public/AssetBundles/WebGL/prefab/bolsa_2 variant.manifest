@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 73761629
+CRC: 3121503074
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 57700557f7271dfae8031901a4e15835
+    Hash: 1800f2dd3edd6264be37a701ccf675d1
   TypeTreeHash:
     serializedVersion: 2
     Hash: f01d53ad1bc3cedade9fe358ccddeb80
@@ -145,5 +145,5 @@ SerializeReferenceClassIdentifiers:
 - AssemblyName: UnityEngine.UI
   ClassName: UnityEngine.UI.Toggle/ToggleEvent
 Assets:
-- Assets/PrefabElements/bolsa_2.prefab
+- Assets/PrefabElements/bolsa_2 Variant.prefab
 Dependencies: []
