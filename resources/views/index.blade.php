@@ -120,16 +120,16 @@
             const decryptedBytes = CryptoJS.AES.decrypt(encryptedDataFromUrl, claveSecreta);
             decryptedData = (decryptedBytes.toString(CryptoJS.enc.Utf8));
 
-            const encryptedDataFromUrlProject = decodeURIComponent(urlParams.get("ProjectData"));
-            const decryptedBytesProject = CryptoJS.AES.decrypt(encryptedDataFromUrlProject, claveSecreta);
-            projectData =(decryptedBytesProject.toString(CryptoJS.enc.Utf8));
+           // const encryptedDataFromUrlProject = decodeURIComponent(urlParams.get("ProjectData"));
+            //const decryptedBytesProject = CryptoJS.AES.decrypt(encryptedDataFromUrlProject, claveSecreta);
+            //projectData =(decryptedBytesProject.toString(CryptoJS.enc.Utf8));
 
           console.log(decryptedData);
      });
 
      function ReturnUserData(){
         console.log("aqui toy");
-        gameInstance.SendMessage('DataFromWebReceiver','GetCookies',decryptedData,projectData);
+        gameInstance.SendMessage('DataFromWebReceiver','GetCookies',decryptedData);
      }
     </script>
   
