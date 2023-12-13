@@ -131,7 +131,7 @@
         gameInstance.SendMessage('DataFromWebReceiver','GetCookies',decryptedData);
      }
 
-     function ReturnUserData(){
+     function ReturnProjectData(){
         gameInstance.SendMessage('DataFromWebReceiver','GetProjectCookies',projectData);
      }
     </script>
