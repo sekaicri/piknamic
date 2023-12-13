@@ -113,26 +113,27 @@
       };
       document.body.appendChild(script);
       
-    document.addEventListener("DOMContentLoaded", function() {
-        const urlParams = new URLSearchParams(window.location.search);
-          const claveSecreta = 'P1kn4m1c*2023';
-            const encryptedDataFromUrl = decodeURIComponent(urlParams.get("userData"));
-            const decryptedBytes = CryptoJS.AES.decrypt(encryptedDataFromUrl, claveSecreta);
-            decryptedData = (decryptedBytes.toString(CryptoJS.enc.Utf8));
+      document.addEventListener("DOMContentLoaded", function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const claveSecreta = 'P1kn4m1c*2023';
 
-            const encryptedDataFromUrlProject = decodeURIComponent(urlParams.get("project"));
-            projectData =(encryptedDataFromUrlProject.toString(CryptoJS.enc.Utf8));
+    const encryptedDataFromUrl = decodeURIComponent(urlParams.get("userData"));
+    const decryptedBytes = CryptoJS.AES.decrypt(encryptedDataFromUrl, claveSecreta);
+    decryptedData = decryptedBytes.toString(CryptoJS.enc.Utf8);
 
-          console.log(decryptedData);
-     });
+    const encryptedDataFromUrlProject = decodeURIComponent(urlParams.get("project"));
+    projectData = encryptedDataFromUrlProject ? encryptedDataFromUrlProject.toString(CryptoJS.enc.Utf8) : '';
 
-     function ReturnUserData(){
-        gameInstance.SendMessage('DataFromWebReceiver','GetCookies',decryptedData);
-     }
+    console.log(decryptedData);
+});
 
-     function ReturnProjectData(){
-        gameInstance.SendMessage('DataFromWebReceiver','GetProjectCookies',projectData);
-     }
+function ReturnUserData() {
+    gameInstance.SendMessage('DataFromWebReceiver', 'GetCookies', decryptedData);
+}
+
+function ReturnProjectData() {
+    gameInstance.SendMessage('DataFromWebReceiver', 'GetProjectCookies', projectData);
+}
     </script>
   
     <!-- BEGIN WEBGL FILE BROWSER LIB -->
