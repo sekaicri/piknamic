@@ -121,8 +121,10 @@
     const decryptedBytes = CryptoJS.AES.decrypt(encryptedDataFromUrl, claveSecreta);
     decryptedData = decryptedBytes.toString(CryptoJS.enc.Utf8);
 
-    const encryptedDataFromUrlProject = decodeURIComponent(urlParams.get("project"));
-    projectData = encryptedDataFromUrlProject ? encryptedDataFromUrlProject.toString(CryptoJS.enc.Utf8) : '';
+    
+    const encryptedDataFromUrlProject = urlParams.get("project");
+    const decodedEncryptedDataProject = encryptedDataFromUrlProject ? decodeURIComponent(encryptedDataFromUrlProject) : '';
+    const projectData = decodedEncryptedDataProject ? decodedEncryptedDataProject.toString(CryptoJS.enc.Utf8) : '';
 
     console.log(decryptedData);
 });
