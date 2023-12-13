@@ -29,6 +29,7 @@
       var fullscreenButton = document.querySelector("#unity-fullscreen-button");
       var warningBanner = document.querySelector("#unity-warning");
       var decryptedData;
+      var projectData;
       // Shows a temporary message banner/ribbon for a few seconds, or
       // a permanent error message on top of the canvas if type=='error'.
       // If type=='warning', a yellow highlight color is used.
@@ -114,19 +115,21 @@
       
     document.addEventListener("DOMContentLoaded", function() {
         const urlParams = new URLSearchParams(window.location.search);
-          // Clave secreta utilizada para cifrar los datos
           const claveSecreta = 'P1kn4m1c*2023';
-           // Descifrar los datos utilizando AES y la clave secreta
             const encryptedDataFromUrl = decodeURIComponent(urlParams.get("userData"));
             const decryptedBytes = CryptoJS.AES.decrypt(encryptedDataFromUrl, claveSecreta);
             decryptedData = (decryptedBytes.toString(CryptoJS.enc.Utf8));
+
+            const encryptedDataFromUrlProject = decodeURIComponent(urlParams.get("ProjectData"));
+            const decryptedBytesProject = CryptoJS.AES.decrypt(encryptedDataFromUrlProject, claveSecreta);
+            projectData =(decryptedBytesProject.toString(CryptoJS.enc.Utf8));
 
           console.log(decryptedData);
      });
 
      function ReturnUserData(){
         console.log("aqui toy");
-        gameInstance.SendMessage('DataFromWebReceiver','GetCookies',decryptedData);      
+        gameInstance.SendMessage('DataFromWebReceiver','GetCookies',decryptedData,projectData);
      }
     </script>
   
