@@ -127,7 +127,7 @@
     //const projectData = decodedEncryptedDataProject ? decodedEncryptedDataProject.toString(CryptoJS.enc.Utf8) : '';
     const encryptedDataFromUrlProject = urlParams.get("project");
     const decodedEncryptedDataProject = encryptedDataFromUrlProject ? decodeURIComponent(encryptedDataFromUrlProject) : '';
-    const projectData = encodeURIComponent(decodedEncryptedDataProject);
+    projectData = encodeURIComponent(decodedEncryptedDataProject);
     console.log(decryptedData);
 });
 
