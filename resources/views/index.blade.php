@@ -9,9 +9,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
   </head>
   <body>
-  <div id="unity-container" style="width: 100%; height: 100%">
-  <canvas id="unity-canvas" width=auto height=auto></canvas>
-      <div id="unity-loading-bar">
+    <div id="unity-container" style="width: 100%; height: 100vh;">
+        <canvas id="unity-canvas" width="100%" height="100%"></canvas>
+        <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
           <div id="unity-progress-bar-full"></div>
