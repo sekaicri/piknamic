@@ -113,6 +113,10 @@
             "sVersion": "096c281ce5f766cb59b76acf5efe39ed"
         },
         {
+            "name": "prefab/caja_2 variant",
+            "sVersion": "eb00c815d07a71a1ea374f3403913394"
+        },
+        {
             "name": "prefab/caja_3 variant",
             "sVersion": "628a97022881578356bdae17fe2f1fea"
         },
